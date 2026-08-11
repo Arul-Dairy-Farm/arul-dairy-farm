@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arul's Farm | Help Feed Our Cows</title>
+<title>Arul Dairy & Cow Care Farm | Help Feed Our Cows</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,13 +36,13 @@
 <section id="about" class="section">
   <div class="cols">
     <div><label>WELCOME TO ARUL'S FARM</label><h2>Every cow deserves <span>care, food & love.</span></h2>
-    <p>Arul's Farm is a family-run dairy farm where we care for our cows with dedication. Our goal is to maintain a clean, healthy and peaceful environment while giving our animals the food, water and attention they need every day.</p></div>
+    <p>Arul Dairy & Cow Care Farm is a family-run dairy farm where we care for our cows with dedication. Our goal is to maintain a clean, healthy and peaceful environment while giving our animals the food, water and attention they need every day.</p></div>
     <div class="stats"><strong>4</strong><small>Donors</small><strong>652+</strong><small>Meals Provided</small><strong>₹5,500</strong><small>Funds Raised</small></div>
   </div>
 </section>
 
 <section id="gallery" class="gallery section">
-  <label>FROM OUR FARM</label><h2>Our <span>Farm Gallery</span></h2><p>Real moments from Arul's Farm.</p>
+  <label>FROM OUR FARM</label><h2>Our <span>Farm Gallery</span></h2><p>Real moments from Arul Dairy & Cow Care Farm.</p>
   <div class="grid">
     <img src="images/cow-01.jpg"><img src="images/cow-02.jpg"><img src="images/cow-03.jpg"><img src="images/cow-04.jpg">
     <img src="images/cow-05.jpg"><img src="images/cow-06.jpg"><img src="images/cow-07.jpg"><img src="images/cow-08.jpg">
@@ -55,20 +55,23 @@
     <div><label>MAKE A DIFFERENCE</label><h2>Help us <span>feed our cows.</span></h2>
     <p>Your support can help with daily feed, clean water, veterinary care and other farm needs.</p>
     <ul><li>✓ Nutritious feed</li><li>✓ Clean drinking water</li><li>✓ Veterinary and medical care</li><li>✓ Clean and safe shelter</li></ul></div>
-    <div class="card"><div class="heart">♥</div><h3>Support Through UPI</h3><p>Use your UPI app or UPI ID.</p><div class="upi">arulpandiyan143@oksbi</div><a class="yellow wide" href="upi://pay?pa=arulpandiyan143@oksbi&pn=Arul%27s%20Farm&cu=INR">PAY WITH UPI</a></div>
+    <div class="card"><div class="heart">♥</div><h3>Support Through UPI</h3><p>Use your UPI app or UPI ID.</p><div class="upi">arulpandiyan143@oksbi</div><button class="copy-btn" type="button" onclick="copyUPI()">COPY UPI ID</button><p id="copy-status" class="copy-status"></p><button class="yellow wide upi-button" type="button" onclick="payWithUPI()">PAY WITH UPI</button></div>
   </div>
 </section>
 
 <section id="contact" class="section contact">
-  <label>GET IN TOUCH</label><h2>Contact <span>Arul's Farm</span></h2>
+  <label>GET IN TOUCH</label><h2>Contact <span>Arul Dairy & Cow Care Farm</span></h2>
   <div class="contact-grid">
-    <a href="tel:+919965276070"><b>📞 Phone</b><br>+91 99652 76070</a>
+    <div class="phone-card"><b>📞 Phone</b><br><a href="tel:+919965276070">+91 99652 76070</a><br><a href="tel:+919600023985">+91 96000 23985</a></div>
     <a href="mailto:aruldairyfarm2026@gmail.com"><b>✉ Email</b><br>aruldairyfarm2026@gmail.com</a>
-    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=11.4419006,79.3211236"><b>📍 Location</b><br>Open Farm Location in Maps</a>
+    <a target="_blank" href="https://www.google.com/maps/search/?api=1&query=11.4419006,79.3211236"><b>📍 Location</b><br>Arul Dairy & Cow Care Farm<br>Open Location in Google Maps</a>
   </div>
 </section>
 
 <a class="wa" target="_blank" href="https://wa.me/919965276070">💬 WhatsApp</a>
-<footer>© <span id="y"></span> Arul's Farm. All rights reserved.</footer>
+<footer>© <span id="y"></span> Arul Dairy & Cow Care Farm. All rights reserved.</footer>
 <script>y.textContent=new Date().getFullYear()</script>
-</body></html>
+<script>
+function payWithUPI(){window.location.href='upi://pay?pa=arulpandiyan143@oksbi&pn=Arul%20Dairy%20%26%20Cow%20Care%20Farm&cu=INR';}
+function copyUPI(){const id='arulpandiyan143@oksbi'; if(navigator.clipboard){navigator.clipboard.writeText(id).then(()=>document.getElementById('copy-status').textContent='UPI ID copied!').catch(()=>document.getElementById('copy-status').textContent='UPI ID: '+id);}else{document.getElementById('copy-status').textContent='UPI ID: '+id;}}
+</script></body></html>

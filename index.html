@@ -55,7 +55,7 @@
     <div><label>MAKE A DIFFERENCE</label><h2>Help us <span>feed our cows.</span></h2>
     <p>Your support can help with daily feed, clean water, veterinary care and other farm needs.</p>
     <ul><li>✓ Nutritious feed</li><li>✓ Clean drinking water</li><li>✓ Veterinary and medical care</li><li>✓ Clean and safe shelter</li></ul></div>
-    <div class="card"><div class="heart">♥</div><h3>Support Through UPI</h3><p>Use your UPI app or UPI ID.</p><div class="upi">arulpandiyan143@oksbi</div><button class="copy-btn" type="button" onclick="copyUPI()">COPY UPI ID</button><p id="copy-status" class="copy-status"></p><button class="yellow wide upi-button" type="button" onclick="payWithUPI()">PAY WITH UPI</button></div>
+    <div class="card"><div class="heart">♥</div><h3>Support Through UPI</h3><p>Make a secure payment directly through your UPI app.</p><button class="yellow wide upi-button" type="button" onclick="payWithUPI()">PAY WITH UPI</button></div>
   </div>
 </section>
 
@@ -78,7 +78,6 @@
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 <script>
 function payWithUPI(){window.location.href='upi://pay?pa=arulpandiyan143@oksbi&pn=Arul%20Dairy%20%26%20Cow%20Care%20Farm&cu=INR';}
-function copyUPI(){const id='arulpandiyan143@oksbi'; if(navigator.clipboard){navigator.clipboard.writeText(id).then(()=>document.getElementById('copy-status').textContent='UPI ID copied!').catch(()=>document.getElementById('copy-status').textContent='UPI ID: '+id);}else{document.getElementById('copy-status').textContent='UPI ID: '+id;}}
 </script>
 </body>
 </html>
